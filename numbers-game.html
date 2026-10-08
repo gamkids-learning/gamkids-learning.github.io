@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamKids - Number Tracing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="game-page">
+
+<header>
+    <img src="images/gamkids-logo.png"
+         alt="GamKids"
+         class="logo">
+</header>
+
+<main>
+    <a href="games.html" class="back-button">← Back</a>
+
+    <h1 class="page-title">Alangmoi Iyafo 🎤</h1>
+
+   <h2 id="speaking-number" class="mandinka-speaking-word">Kiling</h2>
+<p id="speaking-english" class="english-speaking-word">One</p>
+
+<div class="speaking-instruction">
+    <h3>Listen and Speakk</h3>
+</div>
+    <button onclick="playSound('1.m4a')" class="listen-button">
+        🔊 Listen
+    </button>
+
+<button id="recordButton" class="record-button">
+    🎤 Record My Voice
+</button>
+
+    <button id="playRecordingButton"
+            class="play-recording-button"
+            disabled>
+        ▶️ Listen to My Voice
+    </button>
+
+    <p id="recordingMessage"></p>
+   <button id="nextButton" onclick="nextSpeakingNumber()">
+    Next ➡️
+</button>
+
+</div>
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Play | GamKids</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="game-page">
+
+    <header>
+        <img src="images/gamkids-logo.png"
+             alt="GamKids"
+             class="logo">
+    </header>
+
+    <main>
+
+       <a href="games.html" class="back-button">← Back</a>
+
+        <h1 class="page-title">Let's Play!</h1>
+        <p id="score-display">⭐ 0 Correct</p>
+
+        <div class="quiz-question">
+            <h2 id="question-mandinka">Baa be minto le?</h2>
+<p id="question-english">Where is the goat?</p>
+        </div>
+
+       <div class="quiz-options">
+
+    <button class="quiz-card" id="option-1">
+    <img id="option-img-1" src="images/cow.png" alt="Cow">
+</button>
+
+<button class="quiz-card" id="option-2">
+    <img id="option-img-2" src="images/goat.png" alt="Goat">
+</button>
+
+<button class="quiz-card" id="option-3">
+    <img id="option-img-3" src="images/donkey.png" alt="Donkey">
+</button>
+
+</div>
+<p id="quiz-result"></p>
+<div id="celebration"></div>
+<div id="game-complete" style="display: none;">
+
+    <h2>🎉 ⭐ Great Job! ⭐ 🎉</h2>
+
+    <p>You completed the Animals game!</p>
+
+    <button onclick="restartGame()">🔄 Play Again</button>
+
+    <a href="index.html">🏠 Home</a>
+
+</div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Animals | GamKids</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/gamkids-logo.png"
+             alt="GamKids"
+             class="logo">
+    </header>
+
+    <main>
+
+        <a href="index.html" class="back-button">← Home</a>
+
+        <h1 class="page-title">Animals</h1>
+        <p class="instruction">Tap an animal to learn its Mandinka name!</p>
+
+        <div class="animal-grid">
+
+             <button class="animal-card" onclick="playSound('falo.m4a')">
+                <img src="images/donkey.png" alt="Donkey" class="animal-image">
+                <span class="mandinka-word">Falo</span>
+                <span class="english-word">Donkey</span>
+                <span class="sound-icon">🔊</span>
+            </button>
+
+
+            <button class="animal-card" onclick="playSound('baa.m4a')">
+                <img src="images/goat.png" alt="Goat" class="animal-image">
+                <span class="mandinka-word">Baa</span>
+                <span class="english-word">Goat</span>
+                <span class="sound-icon">🔊</span>
+            </button>
+
+            <button class="animal-card" onclick="playSound('nyingso.m4a')">
+                <img src="images/cow.png" alt="Cow" class="animal-image">
+                <span class="mandinka-word">Nyingso</span>
+                <span class="english-word">Cow</span>
+                <span class="sound-icon">🔊</span>
+            </button>
+
+            <button class="animal-card" onclick="playSound('sajiyo.m4a')">
+                <img src="images/sheep.png" alt="Sheep" class="animal-image">
+                <span class="mandinka-word">Sajiyo</span>
+                <span class="english-word">Sheep</span>
+                <span class="sound-icon">🔊</span>
+            </button>
+
+            <button class="animal-card" onclick="playSound('sisewo.m4a')">
+                <img src="images/chicken.png" alt="Chicken" class="animal-image">
+                <span class="mandinka-word">Sisewo</span>
+                <span class="english-word">Chicken</span>
+                <span class="sound-icon">🔊</span>
+            </button>
+
+            <button class="animal-card" onclick="playSound('nyangkumo.m4a')">
+                <img src="images/cat.png" alt="Cat" class="animal-image">
+                <span class="mandinka-word">Nyankumo</span>
+                <span class="english-word">Cat</span>
+                <span class="sound-icon">🔊</span>
+            </button>
+
+             
+
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

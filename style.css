@@ -1,0 +1,865 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8e7;
+    text-align: center;
+    min-height: 100vh;
+}
+
+header {
+    background: white;
+    padding: 15px 20px;
+}
+
+.logo {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+main {
+    padding: 35px 20px;
+}
+
+main h2 {
+    margin-bottom: 30px;
+}
+
+.lessons {
+    display: grid;
+    grid-template-columns: repeat(2, 180px);
+    justify-content: center;
+    gap: 25px;
+}
+
+.lesson-card {
+    background: white;
+    border: none;
+    border-radius: 25px;
+    padding: 25px 15px;
+    cursor: pointer;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s;
+    text-decoration: none;
+color: #333;
+}
+
+.lesson-card:hover {
+    transform: scale(1.05);
+}
+
+.lesson-card span {
+    font-size: 4rem;
+}
+
+.lesson-card h3 {
+    margin-top: 12px;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 500px) {
+    .lessons {
+        grid-template-columns: repeat(2, 140px);
+        gap: 15px;
+    }
+
+    .lesson-card {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 2.3rem;
+    }
+}
+
+/* ANIMALS PAGE */
+
+.page-title {
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+}
+
+.instruction {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.back-button {
+    display: block;
+    width: fit-content;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+.animal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 180px);
+    justify-content: center;
+    gap: 20px;
+}
+
+.animal-card {
+    background: white;
+    border: none;
+    border-radius: 25px;
+    padding: 20px;
+    cursor: pointer;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.animal-card:hover {
+    transform: scale(1.05);
+}
+
+.animal-picture {
+    font-size: 4rem;
+}
+
+.mandinka-word {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.english-word {
+    font-size: 1rem;
+    margin-top: 4px;
+    color: #666;
+}
+
+.sound-icon {
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+@media (max-width: 650px) {
+
+    .animal-grid {
+        grid-template-columns: repeat(2, 140px);
+    }
+
+}
+.animal-image {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px;
+}
+.animal-card:active {
+    transform: scale(0.92);
+}
+
+.animal-card {
+    transition: transform 0.15s ease;
+}
+/* ===== NUMBERS LESSON ===== */
+
+.number-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 18px;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.number-card {
+    min-height: 150px;
+    border: none;
+    border-radius: 25px;
+    background: #fff4b8;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: transform 0.15s ease;
+}
+
+.number-card:active {
+    transform: scale(0.92);
+}
+
+.big-number {
+    font-size: 55px;
+    font-weight: bold;
+    color: #e63946;
+}
+
+.number-card .mandinka-word {
+    font-size: 22px;
+    font-weight: bold;
+    color: #167c3a;
+    margin-top: 8px;
+}
+
+.lesson-intro {
+    text-align: center;
+    font-size: 18px;
+}
+.lesson-card {
+    box-sizing: border-box;
+}
+
+a.lesson-card {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+}
+/* ===== FAMILY LESSON ===== */
+
+.family-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 230px);
+    gap: 20px;
+    justify-content: center;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.family-card {
+   min-height: 230px;
+    border: 2px solid #f3e7b3;
+    border-radius: 25px;
+   background: #fffdf5;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 15px;
+    transition: transform 0.15s ease;
+}
+
+.family-card:active {
+    transform: scale(0.92);
+}
+
+.family-picture {
+    font-size: 55px;
+    margin-bottom: 8px;
+}
+
+.family-card .mandinka-word {
+    font-size: 22px;
+    font-weight: bold;
+    color: #167c3a;
+}
+
+.family-card .english-word {
+    font-size: 15px;
+    margin-top: 4px;
+}
+
+.family-card .sound-icon {
+    font-size: 20px;
+    margin-top: 10px;
+}
+.family-image {
+    width: 185px;
+    height: 165px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 5px;
+}
+.lesson-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.lesson-logo {
+    width: 260px;
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 15px auto 10px;
+}
+
+.lesson-header h1 {
+    font-size: 38px;
+    margin: 5px 0;
+}
+
+.lesson-header p {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.back-home {
+    display: inline-block;
+    margin: 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+}
+/* Compact lesson header */
+.lesson-logo {
+    width: 280px;
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 5px auto 5px;
+}
+
+.lesson-header {
+    text-align: center;
+    margin: 0 auto 15px;
+    padding: 0;
+}
+
+.lesson-header h1 {
+    margin: 5px 0 2px;
+}
+
+.lesson-header p {
+    margin: 0 0 10px;
+}
+
+.back-home {
+    display: block;
+    margin: 10px 20px;
+}
+/* Numbers page layout */
+.number-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 15px;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.number-card {
+    min-height: 120px;
+    border-radius: 22px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.number-card .number {
+    font-size: 42px;
+    font-weight: bold;
+}
+/* PLAY QUIZ */
+
+.quiz-question {
+    text-align: center;
+    margin: 25px auto;
+}
+
+.quiz-question h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.quiz-question p {
+    font-size: 17px;
+    margin-top: 0;
+}
+
+.quiz-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 25px auto;
+}
+
+.quiz-card {
+    width: 170px;
+    height: 170px;
+    border-radius: 22px;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.quiz-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+/* Correct answer celebration */
+
+#celebration {
+    text-align: center;
+    height: 60px;
+    font-size: 35px;
+}
+
+.celebrate {
+    animation: celebrationPop 0.6s ease;
+}
+
+@keyframes celebrationPop {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.3);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+#score-display {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+/* GAME COMPLETE */
+
+#game-complete {
+    text-align: center;
+    margin: 30px auto;
+    padding: 30px 20px;
+    max-width: 450px;
+    border-radius: 25px;
+    background: white;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+}
+
+#game-complete h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#game-complete p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+#game-complete button,
+#game-complete a {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 6px;
+    border: none;
+    border-radius: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#game-complete button {
+    background: #f4c430;
+    color: #222;
+}
+
+#game-complete a {
+    background: #28a745;
+    color: white;
+}
+
+#game-complete button:hover,
+#game-complete a:hover {
+    transform: scale(1.05);
+}
+
+/* NUMBER TRACING GAME */
+
+.tracing-game {
+    text-align: center;
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 20px;
+}
+
+.tracing-number {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tracing-sound {
+    border: none;
+    background: #f4c430;
+    padding: 12px 22px;
+    border-radius: 18px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tracing-english {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.tracing-box {
+    margin: 30px auto 15px;
+    padding: 35px 15px;
+    max-width: 500px;
+    background: white;
+    border: 3px dashed #aaa;
+    border-radius: 20px;
+
+    font-size: 65px;
+    font-weight: bold;
+    color: #d3d3d3;
+    letter-spacing: 8px;
+}
+
+.clear-tracing {
+    margin-top: 15px;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#tracingCanvas {
+    display: block;
+    width: 100%;
+    height: 140px;
+    touch-action: none;
+}
+/* GAMKIDS LISTEN & SPEAK */
+
+.speaking-instruction {
+    text-align: center;
+    margin: 25px auto;
+}
+
+.speaking-instruction p {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.listen-button,
+.record-button,
+.play-recording-button {
+    margin: 10px;
+    padding: 14px 20px;
+    font-size: 17px;
+    border-radius: 12px;
+}
+
+#recordingMessage {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+#nextButton {
+    display: block;
+    margin: 25px auto;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 12px;
+}
+
+/* GAMKIDS LISTEN & SPEAK PAGE */
+
+body:has(.speaking-instruction) {
+    background: linear-gradient(135deg, #fff5b8, #ffe2a6);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+body:has(.speaking-instruction) main {
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Main heading */
+body:has(.speaking-instruction) .page-title {
+    color: #159447;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-shadow: 2px 3px #ffe27a;
+}
+
+/* Mandinka word */
+.mandinka-speaking-word {
+    background: white;
+    color: #e46b20;
+    font-size: 48px;
+    padding: 25px 20px 8px;
+    border-radius: 25px 25px 0 0;
+    border: 4px solid #ffc83d;
+    border-bottom: none;
+    margin: 15px auto 0;
+    max-width: 550px;
+}
+
+/* English translation */
+.english-speaking-word {
+    background: white;
+    color: #555;
+    font-size: 25px;
+    padding: 0 20px 25px;
+    border-radius: 0 0 25px 25px;
+    border: 4px solid #ffc83d;
+    border-top: none;
+    margin: 0 auto 25px;
+    max-width: 550px;
+}
+
+/* Instructions */
+.speaking-instruction {
+    background: #fff8db;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 500px;
+    border: 2px dashed #f3b52d;
+}
+
+.speaking-instruction h3 {
+    color: #168c43;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.speaking-instruction p {
+    font-size: 18px;
+    margin: 5px;
+}
+
+/* All speaking game buttons */
+body:has(.speaking-instruction) .listen-button,
+body:has(.speaking-instruction) .record-button,
+body:has(.speaking-instruction) .play-recording-button,
+body:has(.speaking-instruction) #nextButton {
+    padding: 16px 22px;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s;
+}
+
+.listen-button {
+    background: #20a953;
+}
+
+.record-button {
+    background: #f16b64;
+}
+
+.play-recording-button {
+    background: #3197e8;
+}
+
+#nextButton {
+    background: #9661e8;
+}
+
+body:has(.speaking-instruction) button:hover:not(:disabled) {
+    transform: translateY(-3px);
+}
+
+body:has(.speaking-instruction) button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+/* Recording feedback */
+#recordingMessage {
+    font-size: 19px;
+    color: #79512a;
+    margin: 15px;
+}
+
+/* Smaller screens */
+@media (max-width: 600px) {
+    body:has(.speaking-instruction) main {
+        padding: 15px;
+    }
+
+    body:has(.speaking-instruction) .page-title {
+        font-size: 32px;
+    }
+
+    .mandinka-speaking-word {
+        font-size: 38px;
+    }
+}
+#nextButton {
+    display: block;
+    margin: 30px auto;
+    background: #9661e8;
+    color: white;
+    padding: 16px 45px;
+    border: none;
+    border-radius: 25px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+body:has(.speaking-instruction) #nextButton {
+    display: block;
+    margin: 25px auto;
+    width: 180px;
+}
+/* GamKids Play Menu */
+
+.game-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 450px;
+    margin: 35px auto;
+}
+
+.game-choice {
+    display: block;
+    padding: 25px 20px;
+    border-radius: 20px;
+    background: #ffcc33;
+    color: #333;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 6px 0 #e5a900;
+    transition: transform 0.2s;
+}
+
+.game-choice:nth-child(2) {
+    background: #82d98a;
+    box-shadow: 0 6px 0 #45a84e;
+}
+
+.game-choice:nth-child(3) {
+    background: #ff9eb5;
+    box-shadow: 0 6px 0 #e76b89;
+}
+
+.game-choice:hover {
+    transform: translateY(-4px);
+}
+/* Consistent Back button on all game pages */
+
+.game-page .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    margin: 0;
+}
+
+.game-page main {
+    position: relative;
+}
+/* Same Back button position on every game page */
+.game-page main {
+    position: relative;
+    text-align: left;
+}
+
+
+
+body.game-page .back-button {
+    position: relative;
+    display: block;
+    width: fit-content;
+    left: 0;
+    margin: 0 0 20px 0;
+    text-align: left;
+}
+
+/* Responsive homepage */
+
+@media (max-width: 600px) {
+    body:not(.game-page) .logo {
+        width: 85%;
+        max-width: 320px;
+        height: auto;
+        }
+    
+
+  body:not(.game-page) main {
+    width: 100%;
+    max-width: 100%;
+   padding: 20px 10px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body:not(.game-page) .lessons {
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+body:not(.game-page) .lesson-card {
+    width: auto;
+    padding: 22px 12px;
+}
+}
+/* Tablet homepage */
+@media (min-width: 601px) and (max-width: 1100px) {
+    body:not(.game-page) .logo {
+    width: 70%;
+    max-width: 550px;
+}
+body:not(.game-page) .lessons {
+    grid-template-columns: repeat(2, 250px);
+    gap: 35px;
+    justify-content: center;
+}
+body:not(.game-page) .lesson-card {
+    width: 250px;
+    padding: 50px 20px;
+}
+body:not(.game-page) main h2 {
+    font-size: 2.2rem;
+}
+body:not(.game-page) .lesson-card {
+    background: white;
+    border-radius: 25px;
+    font-size: 1.3rem;
+}
+
+body:not(.game-page) .lesson-card span {
+    display: block;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+body:not(.game-page) .lesson-card h3 {
+    font-size: 1.4rem;
+}
+}
